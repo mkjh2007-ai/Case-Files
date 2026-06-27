@@ -1,0 +1,299 @@
+/* ======================================
+   CASE FILES ANIMATIONS
+====================================== */
+
+/* ---------- LED ---------- */
+
+@keyframes ledBlink{
+
+    0%,45%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.15;
+
+    }
+
+}
+
+/* ---------- Grain ---------- */
+
+@keyframes grainMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    25%{
+
+        transform:translate(-15px,8px);
+
+    }
+
+    50%{
+
+        transform:translate(10px,-12px);
+
+    }
+
+    75%{
+
+        transform:translate(-8px,14px);
+
+    }
+
+    to{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+/* ---------- CRT Noise ---------- */
+
+@keyframes noiseMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-4px);
+
+    }
+
+}
+
+/* ---------- Screen Flicker ---------- */
+
+@keyframes screenFlicker{
+
+    0%,96%,100%{
+
+        opacity:0;
+
+    }
+
+    97%{
+
+        opacity:.08;
+
+    }
+
+    98%{
+
+        opacity:0;
+
+    }
+
+    99%{
+
+        opacity:.05;
+
+    }
+
+}
+
+/* ---------- Typing Cursor ---------- */
+
+@keyframes cursorBlink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+/* ---------- Scanner ---------- */
+
+@keyframes scanDown{
+
+    from{
+
+        transform:translateY(-140px);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(140px);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ---------- Chief ---------- */
+
+@keyframes chiefIdle{
+
+    0%,100%{
+
+        transform:
+        translateX(-50%)
+        translateY(0px);
+
+    }
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        translateY(4px);
+
+    }
+
+}
+
+@keyframes breathing{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.015);
+
+    }
+
+}
+
+/* ---------- Projection ---------- */
+
+@keyframes hologramSweep{
+
+    from{
+
+        transform:translateX(-220px);
+
+    }
+
+    to{
+
+        transform:translateX(260px);
+
+    }
+
+}
+
+/* ======================================
+      TERMINAL OPENS
+====================================== */
+
+@keyframes splitLeft{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:
+
+        translateX(-110vw)
+
+        rotate(-18deg);
+
+    }
+
+}
+
+@keyframes splitRight{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:
+
+        translateX(110vw)
+
+        rotate(18deg);
+
+    }
+
+}
+
+/* ======================================
+     CRT POWERING ON
+====================================== */
+
+@keyframes crtBoot{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+
+        scaleY(.02)
+
+        scaleX(.8);
+
+        filter:brightness(4);
+
+    }
+
+    18%{
+
+        opacity:1;
+
+    }
+
+    35%{
+
+        transform:
+
+        scaleY(.05)
+
+        scaleX(1);
+
+    }
+
+    55%{
+
+        transform:
+
+        scaleY(1)
+
+        scaleX(.02);
+
+    }
+
+    100%{
+
+        transform:
+
+        scale(1);
+
+        opacity:1;
+
+        filter:none;
+
+    }
+
+}
