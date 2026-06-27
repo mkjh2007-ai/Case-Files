@@ -1,99 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CASE FILES</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/intro.css">
+<link rel="stylesheet" href="css/animations.css">
+
+</head>
+
 <body>
 
-    <!-- ===========================
-         INTRO
-    ============================ -->
+<!-- ========================= -->
+<!-- INTRO -->
+<!-- ========================= -->
 
-    <div id="intro">
+<section id="intro">
 
-        <div id="led"></div>
+    <div id="led"></div>
 
-        <div id="terminal">
+    <div id="terminal">
 
-            <h1>CASE FILES</h1>
+        <h1>CASE FILES</h1>
 
-            <div id="status"></div>
+        <div id="status"></div>
 
-            <div id="scanner"></div>
-
-        </div>
+        <div id="scanner"></div>
 
     </div>
 
+</section>
 
+<!-- ========================= -->
+<!-- CRT -->
+<!-- ========================= -->
 
-    <!-- ===========================
-         TRANSFORMATION
-    ============================ -->
+<section id="transform">
 
-    <div id="transform">
+    <div id="monitor">
 
-        <div id="monitor">
+        <div id="monitor-frame">
 
-            <div id="monitor-frame">
+            <div id="crt">
 
-                <div id="crt">
+                <div id="noise"></div>
 
-                    <!-- CRT Effects -->
+                <div id="scanlines"></div>
 
-                    <div id="scanlines"></div>
+                <div id="flicker"></div>
 
-                    <div id="noise"></div>
+                <div id="reflection"></div>
 
-                    <div id="flicker"></div>
+                <div class="corner"></div>
+                <div class="corner"></div>
+                <div class="corner"></div>
+                <div class="corner"></div>
 
-                    <div id="reflection"></div>
+                <div id="chief">
 
+                    <img
+                        id="chiefSprite"
+                        src="assets/images/chief.png"
+                        alt="Chief">
 
+                </div>
 
-                    <!-- CRT Corners -->
+                <div id="projection">
 
-                    <div class="corner"></div>
-                    <div class="corner"></div>
-                    <div class="corner"></div>
-                    <div class="corner"></div>
+                    <img
+                        id="evidenceImage"
+                        src=""
+                        alt="Evidence">
 
+                </div>
 
+                <div id="chiefDialogue">
 
-                    <!-- Chief -->
-
-                    <div id="chief">
-
-                        <img
-                            id="chiefSprite"
-                            src="assets/images/chief.png"
-                            alt="Chief">
-
+                    <div id="speaker">
+                        THE CHIEF
                     </div>
 
-
-
-                    <!-- Evidence Projection -->
-
-                    <div id="projection">
-
-                        <img
-                            id="evidenceImage"
-                            src=""
-                            alt="Evidence">
-
-                    </div>
-
-
-
-                    <!-- Dialogue -->
-
-                    <div id="chiefDialogue">
-
-                        <div id="speaker">
-
-                            THE CHIEF
-
-                        </div>
-
-                        <div id="subtitle"></div>
-
-                    </div>
+                    <div id="subtitle"></div>
 
                 </div>
 
@@ -103,11 +100,12 @@
 
     </div>
 
+</section>
 
-
-    <!-- Scripts -->
-
-    <script src="js/audio.js"></script>
-    <script src="js/intro.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/main.js"></script>
 
 </body>
+
+</html>
